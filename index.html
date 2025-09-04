@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Events and Basic Interactivity </title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <!--Toggle Button using Dark Mode-->
+    <button onclick="toggleTheme()">Toggle Dark Mode</button>
+
+    <!-- inline event handler-->
+    <button onclick="alert('Learning has been achieved only when practice is involved!')"> Click Me !</button>
+    <button id="button-1">Click Me !</button>
+    <button id="button-2"> Click Me !</button>
+    <p id="output">Watch Out for this...!</p>
+
+    <p onmouseover="this.style.color='darkred'" 
+    onmouseout="this.style.color='darkgreen'" 
+    onmousedown="this.style.color='blue'">
+    Let us Create Magic</p>
+  
+    <input type="text" id="inputBox" placeholder=" "> 
+    
+  <!-- Drag and Drop -->
+
+  <div id="dropzone"> This is an image dropzone</div>
+  <img 
+  src="https://images.pexels.com/photos/11750442/pexels-photo-11750442.jpeg" alt="draggable image" 
+  id="dragitem" 
+  draggable="true">
+  
+  <form onsubmit="return ValidateSignUp()">
+   <input type="text" id="username" placeholder=" Enter your username"><br />
+   <input type="email" id="email" placeholder=" Enter your email"><br />
+   <input type="password" id="password" placeholder="Enter your password"><br />
+   <button type="submit">submit</button>
+  </Form>
+  <script src="script.js"></script>
+</body>
+</html>

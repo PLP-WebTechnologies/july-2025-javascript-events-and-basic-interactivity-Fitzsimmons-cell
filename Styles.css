@@ -1,0 +1,19 @@
+body.dark-theme{
+    background:hwb(271 33% 7%);
+    color: white;
+}
+
+#dropzone{
+width: 200px;
+height: 200px;
+border: 2px dashed #ccc;
+line-height: 200px;
+text-align: center;
+}
+
+img{
+width: 200px; 
+height: 200px;
+
+}
+
